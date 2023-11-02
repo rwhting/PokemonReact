@@ -2,9 +2,24 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main {
+  background-color: #EE4B2B;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  
+}
+
+/* not applying atm */
+html, body {
+  margin:0;
+  height:100%;
+  background-color: #EE4B2B;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +50,46 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.silhouette {
+  -webkit-filter: grayscale(100%) brightness(0);
+  filter: grayscale(100%) brightness(0);
+}
+
+.guess-form {
+  text-align: center; /* Center the label and input */
+  display: block; /* Make the div a block element */
+}
+
+.guess-form label {
+  display: block; /* Place the label on a new line */
+}
+
+.searchInput {
+  min-width: 13vw;
+  max-width: 16vw;
+}
+
+.recomendation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  min-width: 13vw;
+  max-width: 16vw;
+  /* border-style: solid;
+  border-color: black; */
 }
